@@ -1,6 +1,7 @@
 #https://python-forum.io/Thread-Text-Adventure-Tutorial-if-structure-to-dictionary
 #Skeleton structure of the way the rooms will work, i.e. where the games are.
 #TODO: Add enough rooms for all the games, find a way to visually represent where the player is in relation to the world map, fix the player representation on the map, and add more
+import ipcalc
 """
 if_adventure.py
  
@@ -27,6 +28,7 @@ while True:
         print("|[ ][ ][ ]|")
         print('This is where the math game will be')
         print('Need to figure out how to load it into this')
+        ipcalc
     elif current_room == 'hangman':
         print("|[ ][^][ ]|")
         print("|[ ][ ][ ]|")
