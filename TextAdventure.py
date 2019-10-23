@@ -1,4 +1,5 @@
 #https://codereview.stackexchange.com/questions/209922/simple-text-escape-room-game
+#This can be used to generate a visual represntation of where the player is
 room_wall = "|"
 spot_template = "[ ]"
 position_indicator = "^"
