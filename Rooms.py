@@ -1,5 +1,6 @@
 #https://python-forum.io/Thread-Text-Adventure-Tutorial-if-structure-to-dictionary
 #Skeleton structure of the way the rooms will work, i.e. where the games are.
+#TODO: Add enough rooms for all the games, find a way to visually represent where the player is in relation to the world map
 """
 if_adventure.py
  
@@ -7,55 +8,54 @@ A text adventure using if/elif statements.
 """
  
 # intro/setup
-print("Welcome to Ichabod's Text Adventure")
-current_room = 'empty'
+print("To Group 5's game!")
+current_room = 'start'
  
 # game loop
 while True:
     # display room contents
     print()
-    if current_room == 'empty':
-        print('You are in an empty room.')
-        print('The stone floors and walls and cold and damp.')
-    elif current_room == 'temple':
-        print('You are in a small temple.')
-        print('There are three rows of benches facing a small statue.')
-    elif current_room == 'torture':
-        print('You are in a torture chamber.')
-        print('There is a rack and an iron maiden against the wall')
-        print('and some chains and thumbscrews on the floor.')
-    elif current_room == 'bedroom':
-        print('You are in a bedroom.')
-        print('There is a large bed with black, silk sheets on it.')
+    if current_room == 'start':
+        print('This is the start room!')
+        print("This is where you will be able to decide where you go")
+    elif current_room == 'Math':
+        print('This is where the math game will be')
+        print('Need to figure out how to load it into this')
+    elif current_room == 'hangman':
+        print('You are in the hangman chamber.')
+        print('Load it in')
+    elif current_room == 'subnet':
+        print('Subnet challenge')
+        print('Load it in')
     # get user input
     command = input('\nWhat do you do? ').strip()
     # movement
     if command.lower() in ('n', 'north'):
-        if current_room == 'empty':
-            current_room = 'temple'
-        elif current_room == 'bedroom':
-            current_room = 'torture'
+        if current_room == 'start':
+            current_room = 'Math'
+        elif current_room == 'subnet':
+            current_room = 'hangman'
         else:
             print("You can't go that way.")
     elif command.lower() in ('s', 'south'):
-        if current_room == 'temple':
-            current_room = 'empty'
-        elif current_room == 'torture':
-            current_room = 'bedroom'
+        if current_room == 'Math':
+            current_room = 'start'
+        elif current_room == 'hangman':
+            current_room = 'subnet'
         else:
             print("You can't go that way.")
     elif command.lower() in ('e', 'east'):
-        if current_room == 'empty':
-            current_room = 'bedroom'
-        elif current_room == 'temple':
-            current_room = 'torture'
+        if current_room == 'start':
+            current_room = 'subnet'
+        elif current_room == 'Math':
+            current_room = 'hangman'
         else:
             print("You can't go that way.")
     elif command.lower() in ('w', 'west'):
-        if current_room == 'bedroom':
-            current_room = 'empty'
-        elif current_room == 'torture':
-            current_room = 'temple'
+        if current_room == 'subnet':
+            current_room = 'start'
+        elif current_room == 'hangman':
+            current_room = 'Math'
         else:
             print("You can't go that way.")
     # quit game
