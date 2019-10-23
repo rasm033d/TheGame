@@ -1,6 +1,6 @@
 #https://python-forum.io/Thread-Text-Adventure-Tutorial-if-structure-to-dictionary
 #Skeleton structure of the way the rooms will work, i.e. where the games are.
-#TODO: Add enough rooms for all the games, find a way to visually represent where the player is in relation to the world map
+#TODO: Add enough rooms for all the games, find a way to visually represent where the player is in relation to the world map, fix the player representation on the map, and add more
 """
 if_adventure.py
  
@@ -16,15 +16,27 @@ while True:
     # display room contents
     print()
     if current_room == 'start':
+        print("|[ ][ ][ ]|")
+        print("|[ ][ ][ ]|")
+        print("|[ ][^][ ]|")
         print('This is the start room!')
         print("This is where you will be able to decide where you go")
     elif current_room == 'Math':
+        print("|[ ][ ][ ]|")
+        print("|[ ][^][ ]|")
+        print("|[ ][ ][ ]|")
         print('This is where the math game will be')
         print('Need to figure out how to load it into this')
     elif current_room == 'hangman':
+        print("|[ ][^][ ]|")
+        print("|[ ][ ][ ]|")
+        print("|[ ][ ][ ]|")
         print('You are in the hangman chamber.')
         print('Load it in')
     elif current_room == 'subnet':
+        print("|[ ][ ][^]|")
+        print("|[ ][ ][ ]|")
+        print("|[ ][ ][ ]|")
         print('Subnet challenge')
         print('Load it in')
     # get user input
