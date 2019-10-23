@@ -13,7 +13,7 @@ Network = IPv4Network(subnet, False) #Adds the IP to a subnet mask
 
 #Prints the network
 print(Network)
-print(Network.broadcast_address) #prints the broadcast address for the network, here for testing purposes
+#print(Network.broadcast_address) #prints the broadcast address for the network, here for testing purposes
 
 #Asks the user for input
 Broadcast=str(input("Please input the broadcast address for the network "))
