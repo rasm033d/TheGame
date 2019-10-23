@@ -19,5 +19,7 @@ print(Network.broadcast_address) #prints the broadcast address for the network, 
 Broadcast=str(input("Please input the broadcast address for the network "))
 
 #Checks if the address is the broadcast address:
-if Broadcast == Network.broadcast_address:
+if Broadcast == str(Network.broadcast_address):
     print("Good job!")
+else:
+    print("Wrong!")
