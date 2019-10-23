@@ -3,7 +3,7 @@ import random
 import ipaddress
 from ipaddress import IPv4Network
 
-SubList = ["14", "15", "16", "17", "18", "19", "20"]
+SubList = ["14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28"]
 #Just for now
 ip = ".".join(map(str, (random.randint(0, 255) 
                         for _ in range(4))))
