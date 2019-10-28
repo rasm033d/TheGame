@@ -3,6 +3,8 @@ import random
 import ipaddress
 from ipaddress import IPv4Network
 
+winconIP = 0
+
 SubList = ["14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28"]
 #Just for now
 ip = ".".join(map(str, (random.randint(0, 255) 
@@ -21,5 +23,7 @@ Broadcast=str(input("Please input the broadcast address for the network "))
 #Checks if the address is the broadcast address:
 if Broadcast == str(Network.broadcast_address):
     print("Good job!")
+    winconIP = 1
+#    print(winconIP)
 else:
     print("Wrong!")
