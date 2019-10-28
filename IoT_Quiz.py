@@ -1,9 +1,7 @@
 score = 0
 print ("Welcome to the IoT Quiz")
-print (" ")
-begin = input ("Would you like to begin?:")
-print (" ")
-if begin == "yes":
+begin = 1
+if begin == 1:
     print ("A) Lm35")
     print ("B) HCSR04")
     print ("C) MQ2Gas")
@@ -27,7 +25,7 @@ if begin == "yes":
     print ("A) 8 bits")
     print ("B) 16 bits")
     print ("C) 24 bits")
-    Question3 = input ("How many bits are in a bite?: ")
+    Question3 = input ("How many bits are in a byte?: ")
     if Question3 == "a" or Question3 == "A":
         print ("Correct!")
         print (" ")
