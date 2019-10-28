@@ -17,14 +17,13 @@ while True:
         print('Hello and welcome to our game!')
         print('This is where you set off on our epic adventure!')
         if command == 'e':
-            current_room = 'temple'
-    elif current_room == 'temple':
+            current_room = 'math'
+    elif current_room == 'math':
         print('Welcome to our math game!')
         print('This is a test of your aptitude in mathematics!')
-        
-        if command == 'e'
-            current_room = 
-    elif current_room == 'torture':
+        if command == 'e':
+            current_room = "IPcalc"
+    elif current_room == 'IPCalc':
         print('You are in a torture chamber.')
         print('There is a rack and an iron maiden against the wall')
         print('and some chains and thumbscrews on the floor.')
