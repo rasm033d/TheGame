@@ -16,7 +16,7 @@ print()
 count = 0
 
 while count < (len(answer)):
-    guess = input("guess a letter: ")
+    guess = str(input("guess a letter: "))
     guess = guess.lower()        # makes a guess in lower cases
     # print(count)
 

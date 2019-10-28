@@ -17,8 +17,8 @@ def random_problem():
     return answer
 
 def ask_question():
-    answer = random_problem()
-    guess = float(input())
+    answer = str(random_problem())
+    guess = str(input())
     return guess == answer
 
 def game():
