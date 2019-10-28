@@ -21,12 +21,16 @@ while True:
     elif current_room == 'math':
         print('Welcome to our math game!')
         print('This is a test of your aptitude in mathematics!')
+#        import Mathgame
         if command == 'e':
-            current_room = "IPcalc"
+            current_room = "IPCalc"
     elif current_room == 'IPCalc':
-        print('You are in a torture chamber.')
-        print('There is a rack and an iron maiden against the wall')
-        print('and some chains and thumbscrews on the floor.')
-    elif current_room == 'bedroom':
-        print('You are in a bedroom.')
-        print('There is a large bed with black, silk sheets on it.')
+        print('This game will test wheter you can find the broadcast address from a given IP and subnet!')
+        import ipcalc
+        if command == 'e':
+            current_room = 'IoT'
+    elif current_room == 'IoT':
+        print('You are now in the internet of things!')
+        print('But alas! There is a quiz!')
+        import IoT_Quiz
+#    elif current_room == 
