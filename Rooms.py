@@ -7,7 +7,7 @@ A text adventure using if/elif statements.
 # intro/setup
 print("Welcome to Ichabod's Text Adventure")
 current_room = 'start'
- 
+import Welcome
 # game loop
 while True:
     command = input('\nPress E to continue ')
@@ -56,5 +56,4 @@ while True:
     elif current_room == 'end':
         print("You've finished our game!")
         print("Congratzzz fam big up from us")
-        print("Now press E to end the program")
         break
