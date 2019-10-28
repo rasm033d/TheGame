@@ -1,27 +1,16 @@
-"""
-if_adventure.py
- 
-A text adventure using if/elif statements.
-"""
- 
-# intro/setup
-print("Welcome to Ichabod's Text Adventure")
-current_room = 'start'
-import Welcome
-# game loop
-while True:
-    command = input('\nPress E to continue ')
-    # display room contents
+current_room = 'start' #sets the start room
+import Welcome  #imports welcome screen
+while True: #while game loop
+    command = input('\nPress E to continue ') #This is the "guiding" force of the game, makes it easy and simple for the player to continue and for us to control the "current_room" variable.
     print()
     if current_room == 'start':
-        print('Hello and welcome to our game!')
         print('This is where you set off on our epic adventure!')
         if command == 'e':
             current_room = 'math'
     elif current_room == 'math':
         print('Welcome to our math game!')
         print('This is a test of your aptitude in mathematics!')
-        import Mathgame
+        import Mathgame #imports the math game, and later on the various other games we have.
         if command == 'e':
             current_room = "IPCalc"
     elif current_room == 'IPCalc':
@@ -51,6 +40,7 @@ while True:
     elif current_room == 'group':
         print("You've made it to our final game!")
         print("Play this game and you can finally be free!")
+        import RPS
         if command == 'e':
             current_room = 'end'
     elif current_room == 'end':
