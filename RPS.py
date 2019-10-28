@@ -1,3 +1,4 @@
+#From https://thehelloworldprogram.com/python/python-game-rock-paper-scissors/
 from random import randint
 
 #create a list of play options

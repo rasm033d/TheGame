@@ -1,3 +1,4 @@
+#Game structure from https://python-forum.io/Thread-Text-Adventure-Tutorial-if-structure-to-dictionary
 current_room = 'start' #sets the start room
 import Welcome  #imports welcome screen
 while True: #while game loop
