@@ -10,3 +10,6 @@ Changed some extensions, updated some files, the broadcast subnet game is finish
 #28-10-2019
 The big day! More or less a complete redesign of the "game", found out what the final game should be, added them to the main game. This is now playable!
 Still need to fix input bug though, but that's easy enough!
+
+Math game took from:https://www.youtube.com/watch?v=0p7yOSlVVR4
+Python game took from:https://www.youtube.com/watch?v=SgQhwtIoQ7o
